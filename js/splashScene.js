@@ -9,6 +9,8 @@
 class SplashScene extends Phaser.Scene {
   constructor () {
     super({ key: "splashScene" })
+
+    this.splashSceneBackgroundImage = null
   }
 
   init(data) {
@@ -17,10 +19,11 @@ class SplashScene extends Phaser.Scene {
 
   preload(){
     console.log("Splash Scene")
+    this.load.image("splashSceneBackground", "./assests/splashSceneImage.png")
   }
 
   create (data) {
-    
+    this.splashSceneBackgroundImage = this.odd.sprite
   }
 
   update (time, delta){
