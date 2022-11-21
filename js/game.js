@@ -7,8 +7,10 @@
 // This file contains the JS functions for index.html
 
 import SplashScene from "./splashScene.js"
+import TitleScene from "./titleScene.js"
 
-const splashScene = new SplashScene
+const splashScene = new SplashScene()
+const titleScene = new TitleScene()
 
 const config = {
   type: Phaser.AUTO,
@@ -31,5 +33,6 @@ const config = {
 const game = new Phaser.Game(config)
 
 game.scene.add("splashScene", splashScene)
+game.scene.add("titleScene", titleScene)
 
 game.scene.start("splashScene")
