@@ -23,7 +23,7 @@ class SplashScene extends Phaser.Scene {
   }
 
   create (data) {
-    this.splashSceneBackgroundImage = this.odd.sprite(
+    this.splashSceneBackgroundImage = this.add.sprite(
       0,
       0,
       "splashSceneBackground"
