@@ -15,13 +15,13 @@ class MenuScene extends Phaser.Scene {
   }
   
   init(data) {
-    this.camera.main.setBackgroundColor("ffffff")
+    this.cameras.main.setBackgroundColor("#ffffff")
   }
   
   preload() {
     console.log("Menu Scene")
     this.load.image("menuSceneBackground", "assets/aliens_screen_image2.jpg")
-    this.load.image("startButton", "assests/start.png")
+    this.load.image("startButton", "assets/start.png")
   }
   
   create(data){
